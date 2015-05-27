@@ -100,6 +100,10 @@ form button:hover{
 	background-color:rgba(153,51,0,0.8) !important;
 }
 
+form button:focus{
+	 outline: 0 none !important;
+}
+
 .form-group input{
 	font-family: 'Righteous', cursive;
     font-size:1.1em;
