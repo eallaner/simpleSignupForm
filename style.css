@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Specific CSS rules */
+h1{
+	font-size: 3em;
+    margin-left:2em;
+    margin-top:1em;
+    font-family: 'Righteous', cursive;
+}
+
+.brand-logo{
+	background-image:url('logo.png');
+	background-repeat: no-repeat;
+	height:16em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 1000px){
+	.brand-logo{
+	   background-position: center;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.brand-logo{
+	   background-size:95% 80%;
+	}
+	h1{
+		font-size: 2em;
+	}
+}
+
+
+form{
+	width: 85%;
+	margin-top: 3em;
+}
+
+form label{
+	margin-bottom: 0.3em;
+	font-family: 'Righteous', cursive;
+}
+
+form button{
+	font-family: 'Righteous', cursive;
+	background-color:rgba(153,51,0,0.4) !important;
+}
+
+form button:hover{
+	background-color:rgba(153,51,0,0.8) !important;
+}
+
+.form-group input{
+	font-family: 'Righteous', cursive;
+    font-size:1.1em;
+}
+
+.form-group input:focus{
+	background-color:rgba(153,51,0,0.1);
+	border-color:rgba(153,102,51,1);
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.1) inset, 0 0 0.5em rgba(153,0,0,0.5) !important;
+    outline: 0 none !important;
+}
+
+
+
+footer{
+	background-color:rgba(153,102,51,0.3);
+	height: 5em;
+	color: #fff;
+	font-size: 1.5em;
+	font-family: 'Righteous', cursive;
+}
+
+@media screen and (max-width: 400px){
+	footer{
+	   font-size: 1em;
+	}
+
+	form input, form label{
+		font-size: 0.8em;
+	}
+
+	form button{
+		font-size: 0.7em !important;
+	}
+}
